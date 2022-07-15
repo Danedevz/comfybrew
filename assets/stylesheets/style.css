@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    border: 0;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+.nav{
+    position: fixed;
+    z-index: 1;
+
+}
