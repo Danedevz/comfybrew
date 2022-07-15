@@ -2,7 +2,7 @@
 
 * {
     margin: 0 auto;
-    padding: 0 auto;
+    padding: auto;
     border: 0;
 }
 
@@ -11,18 +11,36 @@ a:link, a:visited,  a:hover, a:active
     text-decoration: none;
 }
 
+input[type="button"]{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
 
 html {
     font-family: 'Inter', sans-serif;
     font-size: 18px;
 }
+header {
+    height: 1px;
+}
+main{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
 .nav{
     position: fixed;
+    margin: 0;
     z-index: 1;
     display: flex;
     width: 100%;
     height: 70px;
-    background-color: #2F2721;
+    background-color: #2f2721e0;
     color: white;
 }
 .navmenu,.logo {
@@ -46,4 +64,41 @@ html {
     /* background-color: rgb(141, 149, 155); */
     height: 740px;
     background-image: url("../images/coffeemain.png");
+}
+.landcontent {
+    padding-top: 20%;
+    margin: 0 10vw;
+    color: white;
+    font-size: 2.4rem; 
+}
+.landcontent > *{
+    margin-bottom: 20px;
+}
+.menubtn {
+    display: flex;
+    font-size: 1rem;
+    border: 1px solid #fab87b;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    float: left;
+}
+.menubtn:hover{
+    background-color: #fab87b;
+    color: #2f2721;
+    cursor: pointer;
+    transition: background-color 0.1s linear;
+}
+
+/* responsive */
+
+@media screen and (max-width: 768px){
+    html {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 600px){
+    html {
+        font-size: 12spx;
+    }
 }
