@@ -6,11 +6,44 @@
     border: 0;
 }
 
+a:link, a:visited,  a:hover, a:active
+{
+    text-decoration: none;
+}
+
+
 html {
     font-family: 'Inter', sans-serif;
+    font-size: 18px;
 }
 .nav{
     position: fixed;
     z-index: 1;
-
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: #2F2721;
+    color: white;
+}
+.navmenu,.logo {
+    display: flex;
+    align-items: center;
+}
+.navmenu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    
+}
+.navmenu li > *{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 0 20px;
+    font-size: 0.85rem;
+}
+.landing{
+    /* background-color: rgb(141, 149, 155); */
+    height: 740px;
+    background-image: url("../images/coffeemain.png");
 }
