@@ -27,6 +27,8 @@ html {
 }
 header {
     height: 1px;
+    position: fixed;
+    z-index: 2;
 }
 main{
     width: 100%;
@@ -42,16 +44,27 @@ main{
 .nav{
     position: fixed;
     margin: 0;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     width: 100%;
     height: 70px;
-    background-color: #2f2721e0;
+    background-color: rgba(0, 0, 0, 0);
     color: white;
+    transition: background-color 0.2s linear;
+}
+.nav-alpha {
+    background-color: #2f2721e0;
+    transition: background-color 0.2s linear;
 }
 .navmenu,.logo {
     display: flex;
     align-items: center;
+}
+.logo{
+    margin-left: 10vw;
+}
+.navmenu{
+    margin-right: 10vw;
 }
 .navmenu ul {
     display: flex;
@@ -81,19 +94,44 @@ main{
     margin-bottom: 20px;
 }
 .menubtn {
-    display: flex;
+    display: inline-block;
+    position: relative;
+    width: 100px;
     font-size: 1rem;
     border: 1px solid #fab87b;
     border-radius: 10px;
     text-align: center;
     padding: 20px;
-    float: left;
+
 }
 .menubtn:hover{
     background-color: #fab87b;
     color: #2f2721;
     cursor: pointer;
     transition: background-color 0.1s linear;
+}
+.menudrop{
+    display: none;
+    position: absolute;
+    min-width: 120px;
+    right: 0px;
+    top: 60px;
+    right: -1px;
+    z-index: 1;
+    background-color: #fab87b;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.menudrop a{
+    display: block;
+    padding: 20px;
+    text-align: left;
+    color: #2f2721;    
+}
+.menudrop a:hover{
+    color: white;
+    background-color: #c4986f;
+    transition: background-color 0.2s linear;
 }
 .ourcoffee section {
     margin-bottom: 10vh;
