@@ -24,6 +24,7 @@ input[type="button"]{
 html {
     font-family: 'Inter', sans-serif;
     font-size: 18px;
+    scroll-behavior: smooth;
 }
 header {
     height: 1px;
@@ -320,6 +321,36 @@ footer {
     max-height: 100%;
     display: inline-block;
     position: absolute;
+}
+.menu{
+    margin-left: 10vw;
+    width: 40%;
+}
+.menusub{
+    border-bottom: 1px dashed black;
+    margin-bottom: 2vh;
+}
+.menurow{
+    display: flex;
+    text-align: left;
+    margin-left: 0;
+    justify-content: space-between;
+}
+.menurow > *{
+    margin: 0;
+    margin-bottom: 2vh;
+}
+.menudesc{
+    font-style: italic;
+    font-size: 0.85rem;
+    color: #c4986f;
+}
+.menustat{
+    background-color: #fab87b;
+    color: white;
+    padding: 2px 10px;
+    border-radius: 8px;
+    font-size: 0.8rem;
 }
 
 /* responsive */
