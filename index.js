@@ -10,9 +10,6 @@ window.addEventListener('scroll', ()=>{
 })
 
 //Our menu dropdown
-document.addEventListener('click',(e)=>{
-    console.log(e.target)
-})
 const ourmenu = document.getElementById('ourmenu')
 const menubtn = document.querySelector('.menubtn')
 const menudrop = document.querySelector('.menudrop')
@@ -35,5 +32,19 @@ document.addEventListener('click',(e)=>{
             menudrop.style.display = 'none';
             menubtn.style.borderRadius = '10px';
         }
+    }
+})
+
+// nav dropdown
+const menuicon = document.querySelector('.menuicon');
+menuicon.addEventListener('click',()=>{
+    const menuiconspan = document.querySelector('.menuicon span');
+    menuiconspan.style.color = 'white';
+    const navmenu = document.querySelector('.navmenu');
+    if (navmenu.classList == 'navmenu'){
+        navmenu.classList.toggle('shownav')
+    } else {
+        navmenu.classList = 'navmenu';
+        menuiconspan.style.color = '#fab87b';
     }
 })
