@@ -15,7 +15,7 @@ const menubtn = document.querySelector('.menubtn')
 const menudrop = document.querySelector('.menudrop')
 const dropToggle = function(){
 
-    menudrop.style.height = '210px';
+    menudrop.style.height = '12 rem';
     menudrop.style.display = 'block';
     menubtn.style.borderRadius = '10px 10px 0 0';
 }

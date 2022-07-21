@@ -1,0 +1,116 @@
+@media screen and (max-width: 768px){
+    html {
+        font-size: 14px;
+    }
+    .nav{
+        flex-wrap: wrap;
+        background-color: #2f2721e0;
+    }
+    .navmenu{
+        order: 3;
+        display: block;
+        position: relative;
+        width: 100%;
+        margin: 0;
+    }
+    .navmenu ul{
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        padding: 0;
+        flex-direction: column;
+        background-color: #2f2721e0;
+        display: none;
+    }
+    .shownav ul{
+        display: block;
+    }
+    .navmenu ul li{
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        text-align: center;
+    }
+    .menuicon{
+
+        display: flex;
+        order:2;
+    }
+    .aboutdesc{
+        flex-direction: column;
+        margin-bottom: 3vh;
+    }
+    .desc{
+        align-items: center;
+    }
+    .desc h1{
+        text-align: center;
+        margin-right: 0;
+    }
+    .separator-mini{
+        margin-right: 0;
+    }
+    .aboutimg{
+        margin-bottom: 5vh;
+    }
+    .descseparator{
+        text-align: center;
+        margin-bottom: 10vh;
+    }
+    .specialties{
+        align-items: center;
+        flex-direction: column;
+        height: 30rem;
+        margin: 0 10vw;
+    }
+    .speccoffee > *{
+        text-align: center;
+        margin-left: 0;
+    }
+    .speccoffee2 > *{
+        margin-right: 0;
+        text-align: center;
+    }
+    .speccoffee{
+        order: 2;
+    }
+    .imgcoffee{
+        order: 1;
+    }
+    .imgcoffee, .imgcoffee2{
+        margin: 0;
+        width: 10rem;
+        height: 10rem;        
+    }
+    .imgcoffee img{
+        margin-top: 20%;
+    }
+    .imgcoffee2 img{
+        margin: 0;
+        margin-top: 20%;
+    }
+    .pointerwrap{
+        left: 47vw;
+    }
+    
+}
+@media only screen and (max-width: 600px){
+    html {
+        font-size: 12px;
+    }
+    .landcontent{
+        display: flex;
+        flex-direction: column;
+    }
+    .landcontent > *{
+        text-align: center;
+    }
+    .landcontent p{
+        text-shadow: 2px 2px 10px rgba(170, 170, 170, 0.7);
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .pointerwrap{
+        width: 35px;
+        height: 35px;
+    }
+}

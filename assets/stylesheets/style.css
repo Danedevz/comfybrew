@@ -88,14 +88,20 @@ main{
     transition: color 0.2s linear;
 }
 .landing{
-    height: 740px;
+    height: 42rem;
     background-image: url("../images/coffeemain.png");
+    background-repeat:no-repeat;
+    background-position:center;
 }
 .landcontent {
+    height: 100%;
     padding-top: 20%;
     margin: 0 10vw;
     color: white;
     font-size: 2.4rem; 
+}
+.landcontent p{
+    color: #fab87b; 
 }
 .landcontent > *{
     margin-bottom: 20px;
@@ -120,10 +126,10 @@ main{
 .menudrop{
     display: none;
     position: absolute;
-    min-width: 120px;
-    right: 0px;
-    top: 60px;
+    min-width: 142px;
     right: -1px;
+    top: 55px;
+
     z-index: 1;
     background-color: #fab87b;
     border-radius: 0 0 10px 10px;
@@ -140,12 +146,16 @@ main{
     background-color: #c4986f;
     transition: background-color 0.2s linear;
 }
-.ourcoffee section {
+.menudrop a:nth-child(3):hover{
+    border-radius: 0 0 10px 10px;
+
+}
+.ourcoffee section{
     margin-bottom: 10vh;
 }
 .separator {
-    width: 20%;
-    height: 10px;
+    width: 30vw;
+    height: 0.7rem;
     background-color: #fab87b;
     margin-bottom: 5vh;
 }
@@ -191,7 +201,10 @@ main{
     margin-left: 0;
     font-size: 2.5rem;
 }
-
+.descseparator{
+    text-align: center;
+    margin-bottom: 15vh;
+}
 .desc > p {
     text-align: justify;
     float: left;
@@ -301,7 +314,7 @@ main{
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
-    overflow: hidden;
+
 
 }
 .imgcoffee img {
@@ -319,7 +332,7 @@ main{
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    overflow: hidden;
+
 }
 .imgcoffee2 img {
     margin-left: 22vw;
@@ -452,49 +465,4 @@ footer {
 .menuicon span:hover{
     color: white;
     transition: color 0.2s linear;
-}
-
-@media screen and (max-width: 768px){
-    html {
-        font-size: 14px;
-    }
-    .nav{
-        flex-wrap: wrap;
-        background-color: #2f2721e0;
-    }
-    .navmenu{
-        order: 3;
-        display: block;
-        position: relative;
-        width: 100%;
-        margin: 0;
-    }
-    .navmenu ul{
-        position: absolute;
-        width: 100%;
-        top: 100%;
-        padding: 0;
-        flex-direction: column;
-        background-color: #2f2721e0;
-        display: none;
-    }
-    .shownav ul{
-        display: block;
-    }
-    .navmenu ul li{
-        margin-top: 3vh;
-        margin-bottom: 3vh;
-        text-align: center;
-    }
-    .menuicon{
-
-        display: flex;
-        order:2;
-    }
-    
-}
-@media only screen and (max-width: 600px){
-    html {
-        font-size: 12px;
-    }
 }
