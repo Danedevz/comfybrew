@@ -56,11 +56,16 @@
         text-align: center;
         margin-bottom: 10vh;
     }
+    .specialcoffee{
+        margin-top: 5vh;
+    }
     .specialties{
         align-items: center;
         flex-direction: column;
         height: 30rem;
-        margin: 0 10vw;
+    }
+    .specialties:nth-child(2){
+        margin-bottom: 10vh;
     }
     .speccoffee > *{
         text-align: center;
@@ -72,6 +77,7 @@
     }
     .speccoffee{
         order: 2;
+        margin-right: 0;
     }
     .imgcoffee{
         order: 1;
@@ -91,7 +97,34 @@
     .pointerwrap{
         left: 47vw;
     }
-    
+    .menu{
+        width: 80%;
+        margin-right: 10vw;
+    }
+    .bio{
+        display: flex;
+        justify-content: center;
+        float: none;
+        margin: 10vh 0;
+        width: 100%;
+        float: center;
+    } 
+    .biocontainer{
+        margin: 0;
+        width:40%;
+    } 
+    .address{
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .address-content{
+        margin: 0;
+        text-align: center;
+        padding: 5vh;
+    }
+    .address-content > *{
+        margin-bottom: 1vh;
+    }
 }
 @media only screen and (max-width: 600px){
     html {

@@ -2,7 +2,7 @@
 
 * {
     margin: 0 auto;
-    padding: auto;
+    padding: 0;
     border: 0;
 }
 
@@ -261,9 +261,13 @@ main{
 
     background-color: black;
 }
+.specialcoffee{
+    margin-top: 10vh;
+}
 .specialties{
     display: flex;
     justify-content: center;
+    margin: 0 10vw;
 }
 .specialties:nth-child(2){
     margin-bottom: 20vh;
@@ -275,7 +279,6 @@ main{
     justify-content: center;
     align-items: center;
     text-align: right;
-    margin-right: 2vw;
 }
 .speccoffee > *{
     margin-right: 0;
@@ -325,8 +328,7 @@ main{
 }
 .imgcoffee2 {
     flex-basis: 50%;
-    margin-right: 2vw;
-    
+    margin-right: 2vw;    
     position: relative;
     display: inline-block;
     width: 400px;
@@ -335,11 +337,11 @@ main{
 
 }
 .imgcoffee2 img {
-    margin-left: 22vw;
     max-width: 100%;
     max-height: 100%;
     display: inline-block;
     position: absolute;
+    right: 0;
 }
 .menu{
     margin-left: 10vw;
@@ -397,6 +399,10 @@ main{
 .biocontainer p{
     text-align: center;
     color: rgb(133, 133, 133);
+}
+.namecontainer h3, .biocontainer h1{
+    text-align: center;
+    margin-bottom: 1vh;
 }
 .portraitimg{
     position: relative;
