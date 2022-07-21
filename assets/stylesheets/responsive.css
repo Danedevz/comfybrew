@@ -2,6 +2,12 @@
     html {
         font-size: 14px;
     }
+    .first{
+        order: 2;
+    }
+    .second{
+        order: 1;
+    }
     .nav{
         flex-wrap: wrap;
         background-color: #2f2721e0;
